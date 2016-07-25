@@ -1,0 +1,28 @@
+.colorArc {
+
+}
+.outlineArc {
+
+}
+.speed {
+  fill: yellow;
+}
+.special-attack {
+  fill: purple;
+}
+.special-defense {
+  fill: orange;
+}
+.attack {
+  fill: red;
+}
+.defense {
+  fill: blue;
+}
+.hp {
+  fill: green
+}
+#search {
+  top: 500px;
+  position: absolute;
+}
