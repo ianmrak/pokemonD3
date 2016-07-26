@@ -37,6 +37,12 @@ $(document).ready(function() {
   var radius = Math.min(width, height) / 2;
   var innerRadius = 0.3 * radius;
 
+  var svgFixed = d3.select('.chart-fixed').append('svg')
+  .attr('width', w)
+  .attr('height', h)
+  .append('g')
+  .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+
 /* SPAGHETTI D3!!!!!11!1! */
 function buildChart(data) {
 
@@ -118,5 +124,11 @@ function buildChart(data) {
   .transition()
     .duration(750)
     .attr('opacity', 1);
+
+  var name = data.name[0].toUpperCase() + data.name.slice(1);
+  var text = svg.append('svg:text')
+    .text(name)
+    .attr('text-anchor', 'middle')
+    .attr('dy', '3.7em')
   }
 })
