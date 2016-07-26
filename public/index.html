@@ -5,16 +5,30 @@
 </head>
 
 <body>
-  <div class="chart">
-  </div>
-  <div>
-    <form id="search">
-      <input name="input" type="text" placeholder="Search for a pokemon">
-      <input name="submit" type="submit">
-    </form>
+  <div class="container">
+    <div class="chart-description">
+      <div class="color" style="background-color: #ff3333"></div><span>Attack</span>
+      <div class="color" style="background-color: #0066ff"></div><span>Defense</span>
+      <div class="color" style="background-color: #993399"></div><span>Special Attack</span>
+      <div class="color" style="background-color: #ff9966"></div><span>Special Defense</span>
+      <div class="color" style="background-color: #00cc44"></div><span>HP</span>
+      <div class="color" style="background-color: #ffff99"></div><span>Speed</span>
+    </div>
+
+      <div class="search-bar">
+        <form id="search">
+          <input class="input" name="input" type="text" placeholder="Search for a pokemon">
+          <!-- <input name="submit" type="submit"> -->
+          <button name="submit">Submit</button>
+        </form>
+      </div>
+
+    <div class="chart">
+    </div>
   </div>
 
   <script src="d3.js" charset="utf-8"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
   <script src="jquery.min.js"></script>
   <script src="scripts.js"></script>
 </body>
